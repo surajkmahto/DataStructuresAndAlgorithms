@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="https://www.w3.org/2001/XMLSchema" targetNamespace="https://www.journaldev.com/Employee"
+        xmlns:empns="https://www.journaldev.com/Employee" elementFormDefault="qualified"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.w3.org/2001/XMLSchema ">
+
+    <element name="empRequest" type="empns:empRequest"/>
+
+    <element name="empResponse" type="empns:empResponse"/>
+
+    <complexType name="empRequest">
+        <sequence>
+            <element name="id" type="int"/>
+        </sequence>
+    </complexType>
+
+    <complexType name="empResponse">
+        <sequence>
+            <element name="id" type="int"/>
+            <element name="role" type="string"/>
+            <element name="fullName" type="string"/>
+        </sequence>
+    </complexType>
+</schema>
