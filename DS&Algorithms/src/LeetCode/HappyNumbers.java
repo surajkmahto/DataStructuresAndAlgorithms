@@ -3,7 +3,9 @@ package LeetCode;
 import java.util.HashSet;
 import java.util.Set;
 
-// https://www.geeksforgeeks.org/happy-numbers/
+/*
+ * https://www.geeksforgeeks.org/happy-numbers/
+ */
 public class HappyNumbers {
     public static void main(String[] args) {
         System.out.println(isHappy(2));
